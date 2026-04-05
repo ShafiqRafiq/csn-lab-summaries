@@ -16,25 +16,13 @@ This lab helped me understand how OSPF works in a bigger network and not just in
 
 ## What I did
 
-First, I configured the IP addresses on the router interfaces and made sure the interfaces were up and working properly.
+First, I configured the routers and assigned the correct OSPF areas. I also set router IDs and made the loopback interfaces passive where needed.
 
-**[Insert Screenshot 2 here – show ip interface brief]**
+![Show IP Protocols](./show-ip-protocols.png)
 
-After that, I tested connectivity between the routers to make sure basic Layer 3 communication was working before focusing on OSPF.
+After that, I verified that the routers were forming OSPF neighbor relationships properly and that routing between areas was working.
 
-**[Insert Screenshot 3 here – Ping verification]**
-
-Then I enabled OSPFv2 on all routers, assigned the correct areas, and configured the loopback interfaces as passive where needed.
-
-**[Insert Screenshot 4 here – show ip protocols]**
-
-Once OSPF was configured, I checked the neighbor adjacencies to make sure the routers were forming OSPF relationships properly.
-
-**[Insert Screenshot 5 here – show ip ospf neighbor]**
-
-I also verified the OSPF interface details like the area, timer values, cost, and network type.
-
-**[Insert Screenshot 6 here – show ip ospf interface]**
+![Show IP OSPF Neighbor](./show-ip-ospf-neighbor.png)
 
 ## Key concepts shown
 
@@ -42,15 +30,16 @@ I also verified the OSPF interface details like the area, timer values, cost, an
 - router IDs
 - passive interfaces
 - OSPF neighbor adjacencies
-- OSPF verification
-- interface cost and timers
-- routing between areas
+- routing between multiple areas
+
+## What I learned
+
+This lab helped me understand OSPF better, especially how it works across multiple areas instead of just one network. It also gave me more practice with checking neighbor relationships and making sure the routing was configured properly.
 
 ## Commands used
 
 ```bash
-show ip interface brief
 show ip protocols
 show ip ospf neighbor
-show ip ospf interface
-ping
+
+

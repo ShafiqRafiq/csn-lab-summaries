@@ -12,17 +12,17 @@ The topology uses three routers connected across multiple OSPF areas.
 
 This lab helped me understand how OSPF works in a bigger network and not just in a basic single-area setup.
 
-![Topology](./ospf-topology.png)
+![Topology](./images/ospf-topology.png)
 
 ## What I did
 
 First, I configured the routers and assigned the correct OSPF areas. I also set router IDs and made the loopback interfaces passive where needed.
 
-![Show IP Protocols](./show-ip-protocols.png)
+![Show IP Protocols](./images/show-ip-protocols.png)
 
 After that, I verified that the routers were forming OSPF neighbor relationships properly and that routing between areas was working.
 
-![Show IP OSPF Neighbor](./show-ip-ospf-neighbor.png)
+![Show IP OSPF Neighbor](./images/show-ip-ospf-neighbor.png)
 
 ## Key concepts shown
 
